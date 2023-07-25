@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout_.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <img src="@Url.Content("/Content/Images/paradiso3.jpeg")" class="rounded mx-auto d-block">
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: lightgray;
+            font-size: 30px;
+            font-weight: 500;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            border: 5px solid rgb(94, 93, 93);
+            border-radius: 10%;
+            margin-top: 50px;
+        }
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="box text-success fs-3" style="margin-right: 50px">
+                <a style="color:forestgreen" href="/Liste/Liste">
+                TOP 13 MOVIES IN THIS WEEK</a>
+                <i class="fa-solid fa-medal fa-2x"></i>
+            </div>
+            <div class="box text-primary fs-2">
+                MOVIES BY GENRE
+                <i class="fa-solid fa-film fa-2x"></i>
+            </div>
+            <div class="box text-danger fs-4" style="margin-left: 50px">
+                <a style="color:red" href="/yorum/Index">
+                BLOG / COMMENTS/ ALL ABOUT MOVIES</a> <i class="fa-regular fa-paper-plane fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

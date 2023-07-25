@@ -1,0 +1,25 @@
+﻿@using uygulama1.Models
+@model List<film_list>
+@{
+    ViewBag.Title = "Liste2";
+    Layout = "~/Views/Shared/Layout_.cshtml";
+}
+
+<table class="table table-bordered">
+    <thead>
+    <th> Film ID</th>
+    <th> Film Name</th>
+    </thead>
+    <tbody>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td> @i.film_id </td>
+                <td>@i.film_name</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+

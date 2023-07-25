@@ -1,0 +1,27 @@
+﻿@using uygulama1.Models
+@model List<user_comment>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout_.cshtml";
+}
+
+<h2>Latest Comments For Popular Movies</h2>
+
+<div class="container">
+    <div class="row">
+    @foreach (var item in Model)
+    {
+                <div class="col">
+                    <div style="width: 200px; height: 200px; background-color:blanchedalmond; margin-bottom: 10px; text-align: center; font-size: 22px; border: 1px solid gray; border-radius:5% "> @item.film_name <hr />
+                    <div class="fs-6 bg-light"> @item.user_name : "@item.comment"</div>
+                      <div class="d-inline-block fs-6">
+                          <a href="#"> see other comments </a>
+                      </div>
+                        
+                    </div>
+                </div>
+            }
+        </div>
+</div>
+

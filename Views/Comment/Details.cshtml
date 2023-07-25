@@ -1,0 +1,51 @@
+﻿@model uygulama1.Models.user_comment
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Layout_.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>user_comment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.film_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.film_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.film_list.director_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.film_list.director_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user_profile.user_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user_profile.user_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.comment }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

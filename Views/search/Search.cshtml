@@ -1,0 +1,19 @@
+﻿@using uygulama1.Models
+@model List<film_list>
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/Layout_.cshtml";
+}
+
+<h2>Search</h2>
+@using (Html.BeginForm("Search", "search", FormMethod.Get))
+{
+    <span> Search: </span> @Html.TextBox("film_");
+    <input type="submit" value="search" />
+}
+
+@foreach (var item in Model)
+{
+    <h3>@item.film_name</h3>
+}
