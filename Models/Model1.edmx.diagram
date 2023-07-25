@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9cc73e7861764efb9b9e9c2dba75e3f1" Name="Diagram1">
+        <EntityTypeShape EntityType="caglaModel.film_list" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="caglaModel.genre" Width="1.5" PointX="1.5" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="caglaModel.recommended" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="caglaModel.sysdiagram" Width="1.5" PointX="5.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="caglaModel.user_comment" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="caglaModel.user_profile" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="caglaModel.watch_list" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="caglaModel.film_scores" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="caglaModel.student" Width="1.5" PointX="7.75" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="caglaModel.FK_film_list_genre" ManuallyRouted="false" />
+        <AssociationConnector Association="caglaModel.FK_film_scores_film_list" ManuallyRouted="false" />
+        <AssociationConnector Association="caglaModel.FK_user_comment_film_list" ManuallyRouted="false" />
+        <AssociationConnector Association="caglaModel.FK_watch_list_film_list" ManuallyRouted="false" />
+        <AssociationConnector Association="caglaModel.FK_recommended_user_profile" ManuallyRouted="false" />
+        <AssociationConnector Association="caglaModel.FK_watch_list_recommended" ManuallyRouted="false" />
+        <AssociationConnector Association="caglaModel.FK_user_comment_user_profile" ManuallyRouted="false" />
+        <AssociationConnector Association="caglaModel.FK_film_scores_user_profile" ManuallyRouted="false" />
+        <AssociationConnector Association="caglaModel.FK_watch_list_user_profile" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
